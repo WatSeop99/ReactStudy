@@ -1,6 +1,6 @@
 import { TwitchPlayer } from "react-twitch-embed";
 import styled from "styled-components";
-import Responsive from "./Responsive";
+import Responsive from "./common/Responsive";
 
 const StyledPlayer = styled(Responsive)`
   padding-top: 5rem;

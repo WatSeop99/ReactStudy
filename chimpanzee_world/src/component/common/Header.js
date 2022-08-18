@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Responsive from "./Responsive";
-import Menu from "../component/Menu";
-import Toggle from "../component/Toggle";
+import Menu from "./Menu";
+import Toggle from "./Toggle";
 
 const HeaderBlock = styled.div`
   position: fixed;
@@ -41,15 +41,13 @@ const StyledLink = styled(Link)`
   user-select: none;
   -moz-user-select: none;
 
-  &:hover {
-    transition: 0.2s all ease-in-out;
-    color: black;
-  }
   &:focus,
   &:hover,
   &:visited,
   &:link,
   &:active {
+    transition: 0.2s all ease-in-out;
+    color: black;
     text-decoration: none;
   }
 `;

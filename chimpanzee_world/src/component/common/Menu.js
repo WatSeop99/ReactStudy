@@ -26,6 +26,7 @@ const StyledLink = styled(Link)`
   font-size: clamp(1rem, 1.75vw, 6vw);
   font-family: "SDSamliphopangche_Outline";
   transition: 0.2s all ease-in-out;
+  line-height: 300%;
 
   user-select: none;
   -moz-user-select: none;

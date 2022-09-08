@@ -1,12 +1,13 @@
 import React from "react";
-import styled from "styled-components";
-// import styles from "../lib/baseStyle.scss";
+// import styled from "styled-components";
 import Live from "../component/Live";
 import OtherMember from "../component/OtherMember";
 import MainPanel from "../component/MainPanel";
 import BestPost from "../component/BestPost ";
+import styles from "./MainContainer.scss";
 
-const MainPanelListBlock = styled.div`
+/*
+const MainPanelListBlock = styles.body`
   margin: 0 auto;
   padding-bottom: 31px;
 
@@ -38,7 +39,11 @@ const MainPanelListBlock = styled.div`
       }
     }
   }
-`;
+`;*/
+
+const MainPanelListBlock = () => (
+  <div classname={`${styles.MainPanelListBlock}`} />
+);
 
 const MainPanelList = () => {
   const data = [
@@ -54,7 +59,7 @@ const MainPanelList = () => {
       title: "왁타버스 생방송들",
       moreable: true,
       link: "/otherlive",
-      component: <OtherMember fron={true} />,
+      component: <OtherMember front={true} />,
     },
     {
       id: "main_popularpost",

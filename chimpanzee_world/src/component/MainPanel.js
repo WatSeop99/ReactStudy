@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
-import styled from "styled-components";
+// import styled from "styled-components";
 import KeyboardArrowRightRoundedIcon from "@material-ui/icons/KeyboardArrowRightRounded";
+import MainPanelBox from "../lib/baseStyle.scss";
 
-const MainPanelBox = styled.div`
+/*
+const MainPanelBox = styles.body`
   margin-top: 60px;
   list-style: none;
 
@@ -34,7 +36,7 @@ const MainPanelBox = styled.div`
       }
     }
   }
-`;
+`;*/
 
 const MainPanel = ({ data }) => {
   const { link, title, compoennt, moreable } = data;
